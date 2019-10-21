@@ -1,0 +1,14 @@
+C:\Users\Admin\Desktop\temp\AdminShareClient\bin\Debug\AdminShareClient.exe.config
+C:\Users\Admin\Desktop\temp\AdminShareClient\bin\Debug\AdminShareClient.exe
+C:\Users\Admin\Desktop\temp\AdminShareClient\bin\Debug\AdminShareClient.pdb
+C:\Users\Admin\Desktop\temp\AdminShareClient\obj\Debug\AdminShareClient.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\temp\AdminShareClient\obj\Debug\AdminShareClient.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\temp\AdminShareClient\obj\Debug\AdminShareClient.exe
+C:\Users\Admin\Desktop\temp\AdminShareClient\obj\Debug\AdminShareClient.pdb
+C:\Users\Admin\Desktop\windowsClient\AdminShareClient\obj\Debug\AdminShareClient.exe
+C:\Users\Admin\Desktop\windowsClient\AdminShareClient\obj\Debug\AdminShareClient.pdb
+C:\Users\Admin\Desktop\windowsClient\AdminShareClient\bin\Debug\AdminShareClient.exe.config
+C:\Users\Admin\Desktop\windowsClient\AdminShareClient\bin\Debug\AdminShareClient.exe
+C:\Users\Admin\Desktop\windowsClient\AdminShareClient\bin\Debug\AdminShareClient.pdb
+C:\Users\Admin\Desktop\windowsClient\AdminShareClient\obj\Debug\AdminShareClient.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\windowsClient\AdminShareClient\obj\Debug\AdminShareClient.csproj.CoreCompileInputs.cache

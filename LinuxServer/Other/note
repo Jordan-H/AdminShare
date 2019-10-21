@@ -1,0 +1,38 @@
+NOTES:
+service file belongs in:/etc/systemd/system/ directory
+executable cannot be run in /home or /root directory. Put it in /usr/local/bin/ to be safe as stated in the service file.
+Test putting config file in same directory and stating full path for config file
+
+Load Testing:
+to compile: gcc -W -o loadTester -fopenmp loadTest.c
+to run: ./loadTester <host> <port> <num_clients>
+attempted 9000 clients from 2 machines totalling 18000
+fails to accept new clients at around 10000 ~ 11000
+
+Other Test 1 (Linux to Linux encryption):
+Authenticate, USE documents directory, SEND a file, USE to main directory, GET a file
+
+DEMO:
+1. Open logging file
+2. Edit the config file to have an extra expired directory that will be unable to be seen by both machines
+3. start wireshark
+4. systemctl start adminShareServer
+5. Block 1 machine and have the other one not blocked
+6. attempt to connect to the server with both machines
+7. the machine that is not blacklisted will successfully authenticate and timeout
+8. try to connect again with that machine and fail authentication causing block
+9. attempt to connect after being blocked
+10. edit the config file to unblacklist the other machine and systemctl restart
+11. edit the config file to set timeouts to none
+12. connect to the server with both client machines
+For each machine:
+13. GET a file from the main directory
+14. Attempt to send a file to the main directory (fail)
+15. USE a directory
+16. SEND the file into that directory (success)
+17. DELETE a file in the directory (One machine should lack delete priviliges)
+18. Navigate back up to the parent directory
+19. clients both exit
+------
+20. systemctl stop adminShareServer
+21. show wireshark encryption

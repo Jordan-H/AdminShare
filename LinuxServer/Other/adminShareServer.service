@@ -1,0 +1,11 @@
+[Unit]
+Description=AdminShare Server service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/server
+
+[Install]
+WantedBy=multi-user.target
