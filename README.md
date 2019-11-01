@@ -4,59 +4,59 @@ A file sharing service with administrative focus.
 
 Currently with Linux Server and Linux/Windows clients programs.
 
-##Server
+## Server
 Runs using systemd but can be ran as a standalone executable.
 Compile with:
 ```
-gcc -W -o server adminShareServer.c -lpthread
+<b>gcc -W -o server adminShareServer.c -lpthread</b>
 ```
 
 Uses config file at default location:
 ```
-/usr/local/bin/adminShare.config
+<b>/usr/local/bin/adminShare.config</b>
 ```
 
 Place the adminShareServer.service file in:
 ```
-/etc/systemd/system/
+<b>/etc/systemd/system/</b>
 ```
 
 Lastly, place the server executable in:
 ```
-/usr/local/bin/
+<b>/usr/local/bin/</b>
 ```
 
-#Config File
+# Config File
 The following is how the initial section of the config file should be setup:
 ```
-**Port=**_port number_
-**ServerPassword=**_password for server_
-**Logging=**_Logging level. Currently 1 for on, 0 for off_
-**MaxAttempts=**_Number of attempts for server authentication before ban_
-**Timeout=**_Client timeout in HH:MM:SS_
-**Blocked=**_Comma-separated list of IP addresses to be blocked from the server_
+<b>Port=</b><i>port number</i>
+<b>ServerPassword=</b><i>password for server</i>
+<b>Logging=</b><i>Logging level. Currently 1 for on, 0 for off</i>
+<b>MaxAttempts=</b><i>Number of attempts for server authentication before ban</i>
+<b>Timeout=</b><i>Client timeout in HH:MM:SS</i>
+<b>Blocked=</b><i>Comma-separated list of IP addresses to be blocked from the server</i>
 ```
 Following this is a section of shareable directories/files that allow for repeated iterations of the following format:
 ```
 [Directory/File location]
-**password=**_directory password_
-**IP=**_Comma-separated list of WHITELISTED IP addresses that can access this item with R/W/D access level as first character. Ex.D192.168.0.1_
-**Expiration=**_Time that Directory/File will no longer be available in: YYYY:MM:DD HH:MM_
+<b>password=</b><i>directory password</i>
+<b>IP=</b><i>Comma-separated list of WHITELISTED IP addresses that can access this item with R/W/D access level as first character. Ex.D192.168.0.1</i>
+<b>Expiration=</b><i>Time that Directory/File will no longer be available in: YYYY:MM:DD HH:MM</i>
 ```
 
-##Linux Client
+## Linux Client
 
 The program takes no arguments to run.
 Compile with:
 ```
-gcc -W -o <name> adminShareClient.c
+<b>gcc -W -o <name> adminShareClient.c</b>
 ```
 
-##Windows Client
+## Windows Client
 
 Uses .NET Framework Version 4.6.1
 
-##Client Commands
+## Client Commands
 
 Currently, the commands available to clients are as follows:
 
